@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="margin-left:300px;">
+<form action="add-student"  method="POST">
+    <div class="panel">
+        <div class="formbox-policy"> 
+            <h1>Student sign in </h1>        
+             <div class="row">
+                   <!-- <div class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <input  placeholder="Call Date" type="date" class="form-control" value="" name="call_date">
+                    </div>
+                   </div> -->
+                   <div class="col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <input  placeholder="Student Name" type="text" class="form-control" value=""  name="student_name">
+                    </div>
+                   </div>
+                 <div class="col-md-3 col-sm-6">
+                     <div class="form-group">
+                      <input  placeholder="Registration No" type="text" class="form-control" value="" name="registration_no">
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                      <input  placeholder="Course Name" type="text" class="form-control" value="" name="course_name">
+                  </div>
+                 </div> 
+                 <div class="col-md-3 col-sm-6">
+                     <div class="form-group">
+                      <input  placeholder="Date of Registration" type="date" class="form-control" value="" name="date">
+                   </div>
+                 </div>
+                 <div class="col-md-3 col-sm-6">
+                  <div class="form-group"> 
+                      <input  placeholder="Duration" type="text" class="form-control" value="" name="duration">
+                  </div>
+                 </div>  
+                 <div class="col-md-3 col-sm-6">
+                    <div class="form-group"> 
+                        <input  placeholder="Mobile No" type="text" class="form-control" value="" name="mobile_no">
+                    </div>
+                   </div>   
+                   <div class="col-md-3 col-sm-6">
+                    <div class="form-group"> 
+                        <input  placeholder="Email" type="text" class="form-control" value="" name="email">
+                    </div>
+                   </div>    
+                   <div class="col-md-3 col-sm-6">
+                    <div class="form-group"> 
+                        <input  placeholder="Address" type="text" class="form-control" value="" name="address">
+                    </div>
+                   </div>   
+             </div>
+        </div>
+<button class="btn red-btn" type="submit">submit
+</button>
+</form>
+        
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+ 
+ 
+  
+   
+    <div class="container">
+      <h2>Fee Detail Page</h2>
+      <table style="margin-left:160px;">
+        <tr>
+            <th>S.No</th>
+            <th>Student Name</th>
+            <th>Registration No</th>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Mobile No</th>
+            <th>Email</th>
+            <th>fee</th>
+        </tr>
+         
+            {% for row in result %}
+            <tr>
+            {% for data in row %}
+           
+            <td>{{ data }}</td>
+            
+            {% endfor %}
+        </tr>
+            {% endfor %}
+        
+      </table>
+      </div>
+ 
+
+ 
+{% endblock %}

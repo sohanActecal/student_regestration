@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>New Policy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/responsive.css">
+        <style>
+            body{
+                margin-top: 50px;
+                margin-left: 20px;
+            }
+            table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin-left: 270px;
+}
+
+h2{
+    text-align: center;
+    margin-left: 270px;
+    color:rgb(17, 17, 236);
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+  padding-right: 0;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ </style>
+        
+</head>
+<body>
+
+<div class="main_page">
+    <div class="container-lg main-inner">
+        <aside class="main-sidebar sidebar-dark-primary">
+            <div class="sidebar">
+                <div class="user-panel">
+                    <nav class="navbox">
+                        
+                        <ul class="navbar-navbox">
+                          <li class="nav-item">
+                            <a class="nav-link" data-widget="pushmenu" href="#">
+                                <img src="static/images/back-arrow.png">
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                          <li class="nav-item has-treeview menu-open">
+                            <a href="/add-student" class="dashboard nav-link">
+                                Student Registration 
+                              </a>
+                          </li> 
+                          <li class="nav-item has-treeview menu-open">
+                                <a href="/" class="dashboard nav-link">
+                                    Students 
+                                  </a>
+                              </li>
+                              <li class="nav-item has-treeview menu-open">
+                                <a href="/fee" class="dashboard nav-link">
+                                     Submit fee
+                                  </a>
+                              </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+         
+          </div>
+      </div>
+
+      {% block content %}
+    {% endblock %}
+</body>
+</html>
