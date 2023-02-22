@@ -12,10 +12,7 @@
         <link rel="stylesheet" href="../static/css/style.css">
         <link rel="stylesheet" href="../static/css/responsive.css">
         <style>
-            body{
-                margin-top: 50px;
-                margin-left: 20px;
-            }
+            
             table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -41,11 +38,79 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.navbar{
+  background-color: #3aa933; 
+}
+.navbar-brand{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.navbar-nav,li,a{
+  color: rgb(247, 245, 245);
+  font-size: 30px;
+  font-style:solid;
+  display: inline;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color:#fafafa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
  </style>
         
 </head>
 <body>
-
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/add-student">Actecal</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <div class="dropdown">
+          <button class="dropbtn">Admin</button>
+          <div class="dropdown-content">
+          <a href="/login">login</a>
+          <a href="/logout">logout </a>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav> 
 <div class="main_page">
     <div class="container-lg main-inner">
         <aside class="main-sidebar sidebar-dark-primary">
